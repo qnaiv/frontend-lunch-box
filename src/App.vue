@@ -1,7 +1,7 @@
 <template>
   <div id="hero">
-    <img src="lunchbox-logo.png" />
-    frontend-lunch-box
+    <!-- <img src="lunchbox-logo.png" /> -->
+    模写したもの
   </div>
   <div id="gallery">
     <div class="gallery-item">
@@ -39,14 +39,13 @@ body{
 #hero {
   font-size: 1.5em;
   font-weight: 200;
-  text-align: left;
+  text-align: center;
   padding: 50px;
   font-family: "M PLUS Rounded 1c";
 }
 #hero img {
   height: 1.5em;
   vertical-align: middle;
-  /* margin-right: 10px; */
 }
 #gallery {
   display: flex;
