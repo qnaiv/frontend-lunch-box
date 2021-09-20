@@ -11,15 +11,24 @@
       </div>
       <twitter-trend />
     </div>
+    <div class="gallery-item">
+      <div class="header">
+        <div class="title">Google検索オプション</div>
+        <div class="created-date">2021-09-20</div>
+      </div>
+      <google-search-options />
+    </div>
   </div>
 </template>
 
 <script>
 import TwitterTrend from './components/TwitterTrend/TwitterTrend.vue'
+import GoogleSearchOptions from './components/GoogleSearchOptions/GoogleSearchOptions.vue'
 export default {
   name: 'App',
   components: {
-    TwitterTrend
+    TwitterTrend,
+    GoogleSearchOptions
   }
 }
 </script>
@@ -49,6 +58,7 @@ body{
 }
 #gallery {
   display: flex;
+  gap: 15px;
   padding: 0 2%;
 }
 
