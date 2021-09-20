@@ -163,5 +163,9 @@ a {
     overflow-x: auto;
     white-space: nowrap;
   }
+  /* モバイルで横スクロールバーが常時表示される問題を解消 */
+  #google-search-option::-webkit-scrollbar {
+    display: none;
+  }
 }
 </style>

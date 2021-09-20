@@ -22,7 +22,8 @@
       </div>
       <p class="description">
         ツールを押したらさらなるオプションが出るようにした。<br />
-        モバイル表示のときに検索カテゴリが横スクロールになる仕様が地味にめんどかった。
+        モバイル表示のときに検索カテゴリが横スクロールになる仕様が地味にめんどかった。<br />
+        「::-webkit-scrollbar」でモバイル時にスクロールバー無効化できた
       </p>
       <hr />
       <google-search-options />
@@ -101,7 +102,7 @@ hr {
 }
 .gallery-item .description {
   font-size: 0.8em;
-  min-height: 50px;
+  min-height: 60px;
 }
 
 @media (max-width: 40rem) {
