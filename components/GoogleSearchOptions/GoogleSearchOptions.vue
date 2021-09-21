@@ -47,39 +47,40 @@
 </template>
 
 <script>
-import "animate.css";
+import 'material-icons/iconfont/material-icons.css'
+import 'animate.css'
 
 export default {
-  data: function() {
+  data: function () {
     return {
-      currentCategory: "all",
+      currentCategory: 'all',
       categories: [
         {
-          id: "all",
-          name: "すべて",
-          icon: "search",
+          id: 'all',
+          name: 'すべて',
+          icon: 'search',
         },
         {
-          id: "image",
-          name: "画像",
-          icon: "image",
+          id: 'image',
+          name: '画像',
+          icon: 'image',
         },
       ],
       toolVisibleToggle: true,
-    };
+    }
   },
   methods: {
     isActiveCategory(categoryId) {
-      return this.currentCategory === categoryId;
+      return this.currentCategory === categoryId
     },
     onClickCategory(categoryId) {
-      this.currentCategory = categoryId;
+      this.currentCategory = categoryId
     },
     onclickTool() {
-      this.toolVisibleToggle = !this.toolVisibleToggle;
+      this.toolVisibleToggle = !this.toolVisibleToggle
     },
   },
-};
+}
 </script>
 
 <style scoped>
